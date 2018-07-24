@@ -1,8 +1,6 @@
-"use strict";
-
-module.exports = function(number) {
-  return console.log(number);
-};
+import React from "react";
+const MyComponent = () => <h1>Hello from My Component</h1>;
+export default MyComponent;
 
 // import React, { Component, Fragment } from "react";
 // import styled, { keyframes } from "styled-components";
