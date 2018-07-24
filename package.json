@@ -1,6 +1,6 @@
 {
   "name": "react-loading-decorator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a decorator to make loading easier",
   "main": "dist/bundle.js",
   "scripts": {
