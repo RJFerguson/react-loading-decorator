@@ -28,7 +28,7 @@ animation: ${rotate360} ${props => props.duration || "1.1"}s infinite linear;
   }
 }`;
 
-export const loadingManager = config => (target, key, descriptor) => {
+const loadingManager = config => (target, key, descriptor) => {
   // Store the original render method on the target.
   target.renderOnLoad = target.renderOnLoad || descriptor.value;
   descriptor.value = function() {
@@ -66,3 +66,5 @@ export const LoadingWrapper = props => {
 const LoadingIndicator = ({ size, color, duration }) => {
   return <Loader size={size} color={color} duration={duration} />;
 };
+
+exports.default = loadingManager;
