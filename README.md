@@ -1,6 +1,6 @@
 # React loading decorator
 
-A small library that decorates the React render method to simplify loading handling
+A small library that decorates the React render method to simplify loading handling and includes a customizeable loader
 
 ## Installation
 
@@ -27,6 +27,10 @@ class App extends React.Component {
   }
 }
 ```
+
+The loading manager excepts styling props `{ size: <string or int>, color: <string>, duration: <string or int> }`
+
+default props are `{ size: 10, color: "black", duration: 1.1 }`
 
 ## Tests
 
