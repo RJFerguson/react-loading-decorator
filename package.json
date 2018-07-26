@@ -1,12 +1,13 @@
 {
   "name": "react-loading-decorator",
-  "version": "1.0.3",
-  "description": "a decorator to make loading easier",
-  "main": "dist/bundle.js",
+  "version": "1.0.4",
+  "description": "a ES7 decorator to make loading easier",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port 3000 --config ./webpack.config.js --mode development",
     "build": "webpack --mode production",
-    "transpile": "babel src -d dist --copy-files",
+    "transpile": "babel src -d build --copy-files",
     "prepublishOnly": "npm run transpile"
   },
   "keywords": [
@@ -27,11 +28,10 @@
     "babel-preset-stage-2": "^6.24.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-hot-loader": "^4.3.3",
-    "styled-components": "^3.3.3",
-    "webpack": "^4.16.1",
+    "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.5",
+    "styled-components": "^3.3.3"
   },
   "peerDependencies": {
     "react": "^16.4.1",
