@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-import { Button, Loader, loadingManager } from "testpersonalcomps";
+import ReactDOM from "react-dom";
+import { loadingManager } from "./index";
 
 class App extends Component {
   state = {};
@@ -31,3 +32,7 @@ class App extends Component {
 }
 
 export default App;
+
+ReactDOM.render(<App />, document.getElementById("app"));
+
+module.hot.accept();
