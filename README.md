@@ -6,6 +6,18 @@ A small library that decorates the React render method to simplify loading handl
 
 `npm install react-loading-decorator`
 
+In addition to the package you'll need `babel-plugin-transform-decorators-legacy` and have your babel presets include `stage-2`
+
+## Editor Settings
+
+You'll need to enable experimentalDecorators to work properly
+
+```
+{
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+}
+```
+
 ## Usage
 
 ```javascript
@@ -15,7 +27,7 @@ class App extends React.Component {
 ...
 ...
 ...
-  @loadingManager()
+  @loadingManager({})
   render() {
     const { data } = this.state;
     return (

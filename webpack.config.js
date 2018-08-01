@@ -17,7 +17,7 @@ module.exports = {
     publicPath: "/",
     filename: "bundle.js",
     library: "",
-    libraryTarget: "commonjs"
+    libraryTarget: "umd"
   },
   devServer: {
     contentBase: "./dist"
